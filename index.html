@@ -23,11 +23,13 @@
 
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- favicon -->
   </head>
   <body class="outfit-font">
     <!-- navbar section -->
     <nav class="flex justify-between items-center px-10 py-7">
-      <div class=" sm:flex justify-between items-center gap-3">
+      <div class="sm:flex justify-between items-center gap-3">
         <img class="w-[60px] sm:w-[60px]" src="./assets/logo.png" alt="" />
         <p class="text-xl hidden sm:block font-bold">
           Emergency <br />
@@ -44,7 +46,7 @@
         <button
           class="btn flex justify-between items-center gap-1 sm:gap-3 bg-[#41ff6b1a] transition-all border-none hover:opacity-80 rounded-3xl sm:p-6"
         >
-          <span id="coin" class=" text-[16px] sm:text-[19px]">100</span
+          <span id="coin" class="text-[16px] sm:text-[19px]">100</span
           ><img class="w-[20px] sm:w-[30px]" src="./assets/coin.png" alt="" />
         </button>
         <button
@@ -60,8 +62,12 @@
     <div
       class="text-center bg-gradient-to-r from-[#013223] via-[#0C7C59] to-[#013223]"
     >
-      <img class="mx-auto w-[100px] sm:w-[200px] py-5" src="./assets/logo-dark.png" alt="" />
-      <h1 class=" text-3xl sm:text-4xl text-white font-semibold pb-5">
+      <img
+        class="mx-auto w-[100px] sm:w-[200px] py-5"
+        src="./assets/logo-dark.png"
+        alt=""
+      />
+      <h1 class="text-3xl sm:text-4xl text-white font-semibold pb-5">
         Emergency Service Directory
       </h1>
       <p class="text-[12px] sm:text-[16px] text-white opacity-90 pb-5">
@@ -72,7 +78,7 @@
 
     <!-- card section -->
     <div class="bg-green-50 grid grid-cols-1 sm:grid sm:grid-cols-4 p-6 gap-4">
-      <div class="card h-[300px]  bg-white shadow-md hover:shadow">
+      <div class="card h-[300px] bg-white shadow-md hover:shadow">
         <div class="flex justify-between items-center px-4 py-2">
           <img
             class="w-[45px] p-2 bg-[#ffe3e2] rounded-lg"
@@ -99,7 +105,7 @@
           </button>
         </div>
       </div>
-      <div class="card  h-[300px] bg-white shadow-md hover:shadow">
+      <div class="card h-[300px] bg-white shadow-md hover:shadow">
         <div class="flex justify-between items-center px-4 py-2">
           <img
             class="w-[45px] p-2 bg-[#ffe3e2] rounded-lg"
@@ -124,7 +130,7 @@
           </button>
         </div>
       </div>
-      <div class="card   h-[300px] bg-white shadow-md hover:shadow">
+      <div class="card h-[300px] bg-white shadow-md hover:shadow">
         <div class="flex justify-between items-center px-4 py-2">
           <img
             class="w-[45px] p-2 bg-[#ffe3e2] rounded-lg"
@@ -150,7 +156,9 @@
         </div>
       </div>
       <!-- call history card -->
-      <div class="card mb-2 -order-1 sm:order-0 sm:mb-0 bg-white shadow-md hover:shadow row-span-3 h-full ">
+      <div id="call-history"
+        class="card mb-2 -order-1 sm:order-0 sm:mb-0 bg-white shadow-md hover:shadow row-span-3 h-full"
+      >
         <div class="flex justify-between items-center h-[80px] p-4">
           <h1 class="text-xl font-semibold">
             <i class="fa-solid fa-clock mr-2"></i>Call History
@@ -162,15 +170,17 @@
           </button>
         </div>
         <!-- here to go -->
-        <div class=" flex  justify-between items-center m-4 p-2 bg-gray-100 rounded-md ">
+        <!-- <div
+          class="flex justify-between items-center m-4 p-2 bg-gray-100 rounded-md"
+        >
           <div>
             <h1 class="text-xl font-medium">Fire Service Number</h1>
             <h2 class="text-[18px] text-gray-500">999</h2>
           </div>
           <p class="text-[18px]">time</p>
-        </div>
+        </div> -->
       </div>
-      <div class="card  h-[300px] bg-white shadow-md hover:shadow">
+      <div class="card h-[300px] bg-white shadow-md hover:shadow">
         <div class="flex justify-between items-center px-4 py-2">
           <img
             class="w-[45px] p-2 bg-[#ffe3e2] rounded-lg"
@@ -326,12 +336,8 @@
       </div>
     </div>
 
-
-
-
-
-
     <!-- js file -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
+
   </body>
 </html>
