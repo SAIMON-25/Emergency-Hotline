@@ -54,7 +54,7 @@ for (const callBtn of callBtns) {
     child.innerHTML = `
      
            <div
-          class="flex justify-between items-center mx-4 my-1 p-2 bg-gray-100 rounded-md"
+          class="flex justify-between items-center mx-4 my-2 p-2 bg-gray-100 rounded-md"
         >
           <div>
             <h1 class="text-xl font-medium">${title}</h1>
@@ -65,6 +65,16 @@ for (const callBtn of callBtns) {
        
     `;
     // console.log(child);
-    callHistoryParent.appendChild(child);
+    callHistoryParent.prepend(child);
   });
 }
+
+
+// clear button
+const clearBtn = document.getElementById('clear-btn');
+
+clearBtn.addEventListener('click',function(){
+
+    const parent = document.getElementById('call-history');
+    parent.innerText = '';
+})
