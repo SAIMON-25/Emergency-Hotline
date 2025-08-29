@@ -78,3 +78,35 @@ clearBtn.addEventListener('click',function(){
     const parent = document.getElementById('call-history');
     parent.innerText = '';
 })
+
+
+
+// Copy functionality
+
+const copyBtns = document.getElementsByClassName('copy-btn');
+
+
+for(const copyBtn of copyBtns){
+
+  copyBtn.addEventListener('click',function(e){
+
+    const copyCount = document.getElementById('copy-count');
+
+    let count = parseInt(copyCount.innerText);
+    count++;
+    copyCount.innerText = count;
+    console.log(count);
+
+
+    const parent = e.target.parentNode.parentNode;
+    // console.log(parent);
+
+    const number = parent.querySelector('h2').innerText;
+    // console.log(number);
+    
+    navigator.clipboard.writeText(number).then(function(){
+      alert(`${number} is copied to the clipboard`)
+    });
+    
+})
+}
